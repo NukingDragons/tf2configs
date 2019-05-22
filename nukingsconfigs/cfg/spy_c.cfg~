@@ -1,0 +1,70 @@
+exec reset.cfg
+
+cc_emit #NukingsHud.Spy
+cc_emit #NukingsHud.SpyLoadout1
+
+alias ClassSpecificLoadout1 "cc_emit #NukingsHud.SpyLoadout1"
+alias ClassSpecificLoadout2 "cc_emit #NukingsHud.SpyLoadout2"
+alias ClassSpecificLoadout3 "cc_emit #NukingsHud.SpyLoadout3"
+alias ClassSpecificLoadout4 "cc_emit #NukingsHud.SpyLoadout4"
+
+cl_autoreload 0
+
+bind "q" "disguise 8 -2"
+
+alias +A2 "+attack2;spec_prev;LetAutoSap"
+alias -A2 "-attack2;LetAutoSap"
+
+alias +A1 "+attack;spec_next"
+alias -A1 "-attack"
+
+alias OldSpyA1 "-attack"
+alias SapperA1Default "-attack;say_team sapping"
+alias SapperA1 "OldSpyA1"
+
+alias LastWep "Knife"
+
+alias First "slot1; alias -A1 OldSpyA1; LetAutoSap"
+alias Sapper "slot2; alias -A1 SapperA1; LetAutoSap"
+alias Knife "slot3; alias -A1 OldSpyA1; LetAutoSap"
+
+alias +AutoSapper "Sapper; +A1"
+alias -AutoSapper "-A1; LastWep"
+
+alias DisguiseKit "slot4; bind - disguiseteam"
+alias LetAutoSap "bind - +AutoSapper"
+
+bind "-" "+AutoSapper"
+
+bind "1"			"First; alias LastWep First"
+bind "3"			"Knife; alias LastWep Knife"
+bind "2"			"Sapper; alias LastWep Sapper"
+bind "4"			"DisguiseKit"
+bind "5" 			"voicemenu 0 1"
+bind "6" 			"voicemenu 1 1"
+bind "7" 			"voicemenu 1 0"
+bind "8" 			"voicemenu 2 0"
+bind "9" 			"voicemenu 1 2"
+
+//disguise slot1
+bind "LEFTARROW" "+slot1_disguiser"
+alias +slot1_disguiser "slot1;lastdisguise"
+alias -slot1_disguiser "LastWep"
+
+//disguise slot2
+bind "UPARROW" "+slot2_disguiser"
+alias +slot2_disguiser "slot2;lastdisguise"
+alias -slot2_disguiser "LastWep"
+
+//disguise slot3
+bind "RIGHTARROW" "+slot3_disguiser"
+alias +slot3_disguiser "slot3;lastdisguise"
+alias -slot3_disguiser "LastWep"
+
+alias SaySap "alias SapperA1 SapperA1Default"
+alias NoSaySap "alias SapperA1 OldSpyA1"
+
+bind "MOUSE1" "+A1"
+bind "MOUSE2" "+A2"
+
+Loadout4
