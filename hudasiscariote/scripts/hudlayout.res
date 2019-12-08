@@ -209,7 +209,7 @@
         "fieldName" "DisguiseStatus"
         "visible"   "1"
         "enabled"   "1"
-        "xpos"      "40"    
+        "xpos"      "230"    
         "ypos"      "50"
         "zpos"      "2" 
         "wide"      "f0"
@@ -1466,60 +1466,77 @@
 		"scaleImage"	"1"
 	}
 	
-	"CrosshairVerticle"
+//	"CrosshairVerticle"
+//	{
+//		
+//		"ControlName"	"ImagePanel"
+//		"fieldName"		"VerticleLine"
+//		"xpos"			"c-1"
+//		"ypos"			"0"
+//		"zpos"			"-5"
+//		"wide"			"2"
+//		"tall"			"f0"
+//		"autoResize"	"0"
+//		"pinCorner"		"0"
+//		"visible"		"1"
+//		"enabled"		"1"
+//		"fillColor"		"0 0 0 255"
+//		"alpha"			"255"
+//		
+//	}
+//	
+//	"CrosshairHorizontal"
+//	{
+//		
+//		"ControlName"	"ImagePanel"
+//		"fieldName"		"HorizontalLine"
+//		"xpos"			"c-641"
+//		"ypos"			"239"
+//		"zpos"			"-5"
+//		"wide"			"640"
+//		"tall"			"2"
+//		"autoResize"	"0"
+//		"pinCorner"		"0"
+//		"visible"		"1"
+//		"enabled"		"1"
+//		"fillColor"		"0 0 0 255"
+//		"alpha"			"255"
+//		
+//	}
+//	
+//	"CrosshairHorizontal2"
+//	{
+//		
+//		"ControlName"	"ImagePanel"
+//		"fieldName"		"HorizontalLine2"
+//		"xpos"			"r319" // r319 for 4:3, r426 for 16:9
+//		"ypos"			"239"
+//		"zpos"			"-5"
+//		"wide"			"640"
+//		"tall"			"2"
+//		"autoResize"	"0"
+//		"pinCorner"		"0"
+//		"visible"		"1"
+//		"enabled"		"1"
+//		"fillColor"		"0 0 0 255"
+//		"alpha"			"255"
+//		
+//	}
+
+	"ThinCircle"
 	{
-		
-		"ControlName"	"ImagePanel"
-		"fieldName"		"VerticleLine"
-		"xpos"			"c-1"
-		"ypos"			"0"
-		"zpos"			"-5"
-		"wide"			"2"
-		"tall"			"f0"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillColor"		"0 0 0 255"
-		"alpha"			"255"
-		
-	}
-	
-	"CrosshairHorizontal"
-	{
-		
-		"ControlName"	"ImagePanel"
-		"fieldName"		"HorizontalLine"
-		"xpos"			"c-641"
-		"ypos"			"239"
-		"zpos"			"-5"
-		"wide"			"640"
-		"tall"			"2"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillColor"		"0 0 0 255"
-		"alpha"			"255"
-		
-	}
-	
-	"CrosshairHorizontal2"
-	{
-		
-		"ControlName"	"ImagePanel"
-		"fieldName"		"HorizontalLine2"
-		"xpos"			"r319" // r319 for 4:3, r426 for 16:9
-		"ypos"			"239"
-		"zpos"			"-5"
-		"wide"			"640"
-		"tall"			"2"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillColor"		"0 0 0 255"
-		"alpha"			"255"
-		
+		"ControlName"	"CExLabel"
+		"fieldName"	"ThinCircle"
+		"visible"	"1"
+		"enabled"	"1"
+		"zpos"		"2"
+		"xpos"		"c-100"
+		"ypos"		"c-96"
+		"wide"		"200"
+		"tall"		"200"
+		"font"		"M0rexhairCircl"
+		"labelText"	"i"
+		"textAlignment"	"center"
+		"fgcolor"	"255 255 255 0"
 	}
 }

@@ -337,10 +337,10 @@
 	
 	"Thin Circle"
 	{
-		"visible"									"0"
+		"visible"									"1"
 		
 		"xpos"										"c-25"
-		"ypos"										"c-25"
+		"ypos"										"c-24"
 		"wide"										"50"
 		"tall"										"50"
 		
