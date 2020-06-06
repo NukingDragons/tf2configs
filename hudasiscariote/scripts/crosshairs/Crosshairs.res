@@ -337,16 +337,16 @@
 	
 	"Thin Circle"
 	{
-		"visible"									"1"
+		"visible"									"0"
 		
 		"xpos"										"c-25"
 		"ypos"										"c-24"
 		"wide"										"50"
-		"tall"										"50"
+		"tall"										"49"
 		
-		"fgcolor"									"255 255 255 255"
+		"fgcolor"									"255 192 255 255"
 		"labelText"									"h"
-		"font"										"size: 28, outline: off"
+		"font"										"size: 16, outline: off"
 		
 		"controlName"								"CExLabel"
 		"fieldName"									"Thin Circle"
